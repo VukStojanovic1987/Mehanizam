@@ -1,0 +1,935 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F821BFE9-0C5C-4E79-9027-ACA6F47898F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mehanizam</RootNamespace>
+    <AssemblyName>Mehanizam</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>mehanizam_ikona.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administracija\Arhiva\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracija\Arhiva\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracija\Delovodnik\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracija\Delovodnik\frmUredi.Designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracija\Delovodnik\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracija\Delovodnik\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracija\Delovodnik\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracija\Delovodnik\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Baze\clsAccessBP.cs" />
+    <Compile Include="Finansije\Predracuni\clsPilot.cs" />
+    <Compile Include="Finansije\Priznanice\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finansije\Priznanice\frmUredi.designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finansije\Priznanice\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finansije\Priznanice\frmDodaj.designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finansije\Predracuni\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finansije\Predracuni\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finansije\Priznanice\clsPilot.cs" />
+    <Compile Include="Finansije\Predracuni\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finansije\Predracuni\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finansije\Priznanice\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finansije\Priznanice\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finansije\Predracuni\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finansije\Predracuni\frmUredi.Designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finansije\Racuni\clsPilot.cs" />
+    <Compile Include="Finansije\Racuni\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finansije\Racuni\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finansije\Racuni\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finansije\Racuni\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finansije\Racuni\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finansije\Racuni\frmUredi.Designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finansije\Uplatnice\clsPilot.cs" />
+    <Compile Include="Finansije\Uplatnice\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finansije\Uplatnice\frmUredi.Designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finansije\Uplatnice\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finansije\Uplatnice\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finansije\Uplatnice\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finansije\Uplatnice\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIndex.Designer.cs">
+      <DependentUpon>frmIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Poruke\clsPoruke.cs" />
+    <Compile Include="Informacije\Banke\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\Banke\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\Drzave\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\Drzave\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\JediniceMere\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\JediniceMere\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\KlasifikacijaObjekata\Lista\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\KlasifikacijaObjekata\Lista\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\KlasifikacijaObjekata\Pravilnik\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\KlasifikacijaObjekata\Pravilnik\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\Lica\clsPismo.cs" />
+    <Compile Include="Informacije\Lica\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\Lica\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\Materijali\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\Materijali\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\Mesta\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\Mesta\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\NameneProstorija\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\NameneProstorija\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\Okruzi\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\Okruzi\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\Opstine\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\Opstine\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\PredmerPredracun\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\PredmerPredracun\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\PrikljuciNaInfrastruturu\PrikljuciNaElektro\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\PrikljuciNaInfrastruturu\PrikljuciNaElektro\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\PrikljuciNaInfrastruturu\PrikljuciNaKanalizaciju\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\PrikljuciNaInfrastruturu\PrikljuciNaKanalizaciju\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\PrikljuciNaInfrastruturu\PrikljuciNaVodovod\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\PrikljuciNaInfrastruturu\PrikljuciNaVodovod\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\Projektanti\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\Projektanti\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\TekuciRacuni\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\TekuciRacuni\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\Valute\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\Valute\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\VrsteRadova\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\VrsteRadova\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacije\Zvanja\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacije\Zvanja\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kontrole\clsTreeView.cs" />
+    <Compile Include="Odabir\clsCeopVrsteZahteva.cs" />
+    <Compile Include="Odabir\clsValute.cs" />
+    <Compile Include="Odabir\clsVrsteDokumenata.cs" />
+    <Compile Include="Odabir\clsJediniceMere.cs" />
+    <Compile Include="Odabir\clsMestaSaPostanskimBrojevima.cs" />
+    <Compile Include="Odabir\frmTekuciRacuni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odabir\frmTekuciRacuni.designer.cs">
+      <DependentUpon>frmTekuciRacuni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odabir\frmLica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odabir\frmLica.designer.cs">
+      <DependentUpon>frmLica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odabir\frmProjektovanjePredmeti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odabir\frmProjektovanjePredmeti.Designer.cs">
+      <DependentUpon>frmProjektovanjePredmeti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Podesavanja\frmLozinka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Podesavanja\frmLozinka.designer.cs">
+      <DependentUpon>frmLozinka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Podesavanja\frmNapraviArhivu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Podesavanja\frmNapraviArhivu.Designer.cs">
+      <DependentUpon>frmNapraviArhivu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Podesavanja\frmPodesavanja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Podesavanja\frmPodesavanja.Designer.cs">
+      <DependentUpon>frmPodesavanja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prava\Ovlascenja\clsPilot.cs" />
+    <Compile Include="Prava\Ovlascenja\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prava\Ovlascenja\frmUredi.Designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prava\Ovlascenja\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prava\Ovlascenja\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prava\Ovlascenja\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prava\Ovlascenja\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prava\Ugovori\Predmeti\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prava\Ugovori\Predmeti\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prava\Ugovori\Predmeti\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prava\Ugovori\Predmeti\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prava\Ugovori\Predmeti\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prava\Ugovori\Predmeti\frmUredi.Designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Projektovanje\CEOP\Predmet\frmIzveziZahtev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\CEOP\Predmet\frmIzveziZahtev.Designer.cs">
+      <DependentUpon>frmIzveziZahtev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\CEOP\Predmet\frmNazivPredmeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\CEOP\Predmet\frmNazivPredmeta.Designer.cs">
+      <DependentUpon>frmNazivPredmeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\CEOP\Predmet\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\CEOP\Predmet\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\CEOP\Predmet\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\CEOP\Predmet\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\CEOP\Predmet\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\CEOP\Predmet\frmUredi.Designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\Katalozi\Predmeti\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\Katalozi\Predmeti\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\Katalozi\Predmeti\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\Katalozi\Predmeti\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\Katalozi\Predmeti\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\Katalozi\Predmeti\frmUredi.Designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\EEE\Predmeti\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\EEE\Predmeti\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\EEE\Predmeti\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\EEE\Predmeti\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\EEE\Predmeti\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\EEE\Predmeti\frmUredi.Designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\Projekti\Predmeti\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\Projekti\Predmeti\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\Projekti\Predmeti\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\Projekti\Predmeti\frmUredi.Designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\Projekti\Predmeti\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\Projekti\Predmeti\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\Ozakonjenja\Predmeti\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\Ozakonjenja\Predmeti\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\Ozakonjenja\Predmeti\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\Ozakonjenja\Predmeti\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\Ozakonjenja\Predmeti\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\Ozakonjenja\Predmeti\frmUredi.Designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\PredmerPredracun\Predmeti\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\PredmerPredracun\Predmeti\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\PredmerPredracun\Predmeti\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\PredmerPredracun\Predmeti\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\PredmerPredracun\Predmeti\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\PredmerPredracun\Predmeti\frmUredi.Designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\Projekti\Projekat\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\Projekti\Projekat\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\SpecifikacijaMaterijala\Predmeti\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\SpecifikacijaMaterijala\Predmeti\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\SpecifikacijaMaterijala\Predmeti\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\SpecifikacijaMaterijala\Predmeti\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\SpecifikacijaMaterijala\Predmeti\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\SpecifikacijaMaterijala\Predmeti\frmUredi.Designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\TehnickaKontrola\Predmeti\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\TehnickaKontrola\Predmeti\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\TehnickaKontrola\Predmeti\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\TehnickaKontrola\Predmeti\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\TehnickaKontrola\Predmeti\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\TehnickaKontrola\Predmeti\frmUredi.Designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\TehnickiPregled\Predmeti\frmDodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\TehnickiPregled\Predmeti\frmDodaj.Designer.cs">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\TehnickiPregled\Predmeti\frmPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\TehnickiPregled\Predmeti\frmPregled.Designer.cs">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projektovanje\TehnickiPregled\Predmeti\frmUredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projektovanje\TehnickiPregled\Predmeti\frmUredi.Designer.cs">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administracija\Arhiva\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracija\Delovodnik\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracija\Delovodnik\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracija\Delovodnik\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finansije\Priznanice\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finansije\Priznanice\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finansije\Predracuni\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finansije\Predracuni\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finansije\Priznanice\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finansije\Predracuni\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finansije\Racuni\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finansije\Racuni\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finansije\Racuni\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finansije\Uplatnice\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finansije\Uplatnice\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finansije\Uplatnice\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIndex.resx">
+      <DependentUpon>frmIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\Banke\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\Drzave\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\JediniceMere\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\KlasifikacijaObjekata\Lista\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\KlasifikacijaObjekata\Pravilnik\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\Lica\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\Materijali\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\Mesta\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\NameneProstorija\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\Okruzi\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\Opstine\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\PredmerPredracun\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\PrikljuciNaInfrastruturu\PrikljuciNaElektro\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\PrikljuciNaInfrastruturu\PrikljuciNaKanalizaciju\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\PrikljuciNaInfrastruturu\PrikljuciNaVodovod\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\Projektanti\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\TekuciRacuni\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\Valute\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\VrsteRadova\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacije\Zvanja\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odabir\frmTekuciRacuni.resx">
+      <DependentUpon>frmTekuciRacuni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odabir\frmLica.resx">
+      <DependentUpon>frmLica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odabir\frmProjektovanjePredmeti.resx">
+      <DependentUpon>frmProjektovanjePredmeti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Podesavanja\frmLozinka.resx">
+      <DependentUpon>frmLozinka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Podesavanja\frmNapraviArhivu.resx">
+      <DependentUpon>frmNapraviArhivu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Podesavanja\frmPodesavanja.resx">
+      <DependentUpon>frmPodesavanja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prava\Ovlascenja\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prava\Ovlascenja\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prava\Ovlascenja\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prava\Ugovori\Predmeti\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prava\Ugovori\Predmeti\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prava\Ugovori\Predmeti\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\CEOP\Predmet\frmIzveziZahtev.resx">
+      <DependentUpon>frmIzveziZahtev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\CEOP\Predmet\frmNazivPredmeta.resx">
+      <DependentUpon>frmNazivPredmeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\CEOP\Predmet\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\CEOP\Predmet\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\CEOP\Predmet\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\Katalozi\Predmeti\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\Katalozi\Predmeti\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\Katalozi\Predmeti\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\EEE\Predmeti\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\EEE\Predmeti\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\EEE\Predmeti\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\Projekti\Predmeti\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\Projekti\Predmeti\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\Projekti\Predmeti\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\Ozakonjenja\Predmeti\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\Ozakonjenja\Predmeti\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\Ozakonjenja\Predmeti\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\PredmerPredracun\Predmeti\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\PredmerPredracun\Predmeti\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\PredmerPredracun\Predmeti\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\Projekti\Projekat\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\SpecifikacijaMaterijala\Predmeti\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\SpecifikacijaMaterijala\Predmeti\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\SpecifikacijaMaterijala\Predmeti\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\TehnickaKontrola\Predmeti\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\TehnickaKontrola\Predmeti\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\TehnickaKontrola\Predmeti\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\TehnickiPregled\Predmeti\frmDodaj.resx">
+      <DependentUpon>frmDodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\TehnickiPregled\Predmeti\frmPregled.resx">
+      <DependentUpon>frmPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projektovanje\TehnickiPregled\Predmeti\frmUredi.resx">
+      <DependentUpon>frmUredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\CdOmotIdp.cdr" />
+    <None Include="Resources\CdOmotIdr.cdr" />
+    <None Include="Resources\CdOmotPgd.cdr" />
+    <None Include="Resources\CdOmotPio.cdr" />
+    <None Include="Resources\CdOmotPzi.cdr" />
+    <None Include="Resources\EEE.xlsm" />
+    <None Include="Resources\Fotografije.cdr" />
+    <None Include="Resources\GlavnaSveska.xlsm" />
+    <None Include="Resources\GlavnaSveskaIdp.xlsm" />
+    <None Include="Resources\GlavnaSveskaIdr.xlsm" />
+    <None Include="Resources\GlavnaSveskaPgd.xlsm" />
+    <None Include="Resources\GlavnaSveskaPio.xlsm" />
+    <None Include="Resources\GlavnaSveskaPzi.xlsm" />
+    <None Include="Resources\GrafickaDokumentacijaA.dwg" />
+    <None Include="Resources\GrafickaDokumentacijaEEE.dwg" />
+    <None Include="Resources\IdpTekstualnaDokumentacijaA.xlsm" />
+    <None Include="Resources\IdrTekstualnaDokumentacijaA.xlsm" />
+    <None Include="Resources\IzvodIzProjektaPGD.xlsm" />
+    <None Include="Resources\Katalog.xlsm" />
+    <None Include="Resources\Ozakonjenje.xlsm" />
+    <None Include="Resources\OzakonjenjeSkraceno.xlsm" />
+    <None Include="Resources\PgdTekstualnaDokumentacijaA.xlsm" />
+    <None Include="Resources\PioTekstualnaDokumentacijaA.xlsm" />
+    <None Include="Resources\Pismo.oft" />
+    <None Include="Resources\PredmerPredracun.xlsm" />
+    <None Include="Resources\ProjekatArhitekture.xlsm" />
+    <None Include="Resources\PziTekstualnaDokumentacijaA.xlsm" />
+    <None Include="Resources\SpecifikacijaMaterijala.xlsm" />
+    <None Include="Resources\TabliceZaCrteze.dwg" />
+    <None Include="Resources\TehnickaKontrola.xlsm" />
+    <None Include="Resources\TehnickiPregled.xlsm" />
+    <None Include="Resources\UgovorKratkorocnePozajmice.xlsm" />
+    <None Include="Resources\Uplatnica.xlsm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_128x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mehanizam_ikona.ico" />
+    <None Include="Resources\kuki3_38x.png" />
+    <None Include="Resources\kuki2_38x.png" />
+    <None Include="Resources\kuki_38x.png" />
+    <None Include="Resources\logo_206x42.png" />
+    <None Include="Resources\CEOP.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Uplatnice.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Priznanice.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Ovlascenja.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Delovodnik.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Ovlascenje.xlsm" />
+    <None Include="Resources\Predracun.xlsm" />
+    <None Include="Resources\Priznanica.xlsm" />
+    <None Include="Resources\Racun.xlsm" />
+    <None Include="Resources\Racuni.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Predracuni.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Informacije.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
