@@ -6,4 +6,4 @@ Note: I developed the application for the company I worked for, customizing it t
 
 ![App Image](https://github.com/vukstojanovic1987/Mehanizam/blob/master/Screenshot.png)
 
-Copyrights © Vuk Stojanović. All rights reserved.
+Copyright © Vuk Stojanović, 2017. All rights reserved.
