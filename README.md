@@ -4,4 +4,6 @@ Mehanizam is an application for administrative purposes and creating technical p
 
 Note: I developed the application for the company I worked for, customizing it to fit the team's specific needs and project management processes.
 
+![App Image](https://github.com/vukstojanovic1987/Mehanizam/blob/master/Screenshot.png)
+
 Copyrights © Vuk Stojanović. All rights reserved.
